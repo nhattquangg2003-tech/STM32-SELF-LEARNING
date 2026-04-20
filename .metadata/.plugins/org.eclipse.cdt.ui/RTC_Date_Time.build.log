@@ -1,0 +1,10 @@
+09:10:49 **** Incremental Build of configuration Debug for project RTC_Date_Time ****
+make -j12 all 
+arm-none-eabi-size   RTC_Date_Time.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26004	    484	   1692	  28180	   6e14	RTC_Date_Time.elf
+Finished building: default.size.stdout
+ 
+
+09:10:49 Build Finished. 0 errors, 0 warnings. (took 312ms)
+

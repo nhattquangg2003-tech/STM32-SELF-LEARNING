@@ -1,0 +1,16 @@
+STM32F103C8T6_UART_driver.c:11:6:USART_PeripheralControl	16	static
+STM32F103C8T6_UART_driver.c:24:6:USART_PeriClockControl	16	static
+STM32F103C8T6_UART_driver.c:87:9:USART_GetFlagStatus	16	static
+STM32F103C8T6_UART_driver.c:110:6:USART_ClearFlag	16	static
+STM32F103C8T6_UART_driver.c:129:6:USART_Init	24	static
+STM32F103C8T6_UART_driver.c:221:6:USART_DeInit	16	static
+STM32F103C8T6_UART_driver.c:260:6:USART_SendData	32	static
+STM32F103C8T6_UART_driver.c:322:6:USART_ReceiveData	32	static
+STM32F103C8T6_UART_driver.c:398:9:USART_SendDataIT	32	static
+STM32F103C8T6_UART_driver.c:434:9:USART_ReceiveDataIT	32	static
+STM32F103C8T6_UART_driver.c:462:6:USART_SetBaudRate	40	static
+STM32F103C8T6_UART_driver.c:528:17:RCC_GetPCLK1Value	48	static
+STM32F103C8T6_UART_driver.c:594:17:RCC_GetPCLK2Value	48	static
+STM32F103C8T6_UART_driver.c:661:6:USART_IRQInterruptConfig	16	static
+STM32F103C8T6_UART_driver.c:706:6:USART_IRQPriorityConfig	24	static
+STM32F103C8T6_UART_driver.c:731:6:USART_IRQHandling	48	static

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 10 resources" deleteContents="false" description="Delete 10 resources" element1="/CAN_NormalMode_2Nodes2/Debug/CAN_NormalMode_2Nodes.elf" element10="/CAN_NormalMode_2Nodes2/Debug/CAN_NormalMode_2Nodes2.map" element2="/CAN_NormalMode_2Nodes2/Debug/CAN_NormalMode_2Nodes2.elf" element3="/CAN_NormalMode_2Nodes2/Debug/CAN_NormalMode_2Nodes.bin" element4="/CAN_NormalMode_2Nodes2/Debug/CAN_NormalMode_2Nodes.hex" element5="/CAN_NormalMode_2Nodes2/Debug/CAN_NormalMode_2Nodes.list" element6="/CAN_NormalMode_2Nodes2/Debug/CAN_NormalMode_2Nodes.map" element7="/CAN_NormalMode_2Nodes2/Debug/CAN_NormalMode_2Nodes2.bin" element8="/CAN_NormalMode_2Nodes2/Debug/CAN_NormalMode_2Nodes2.hex" element9="/CAN_NormalMode_2Nodes2/Debug/CAN_NormalMode_2Nodes2.list" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="10" stamp="1775307393213"/>
+</session>

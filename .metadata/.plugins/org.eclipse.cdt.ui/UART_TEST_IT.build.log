@@ -1,0 +1,46 @@
+14:36:09 **** Incremental Build of configuration Debug for project UART_TEST_IT ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:13: error: invalid storage class for function 'MX_USART2_UART_Init'
+  177 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:210:13: error: invalid storage class for function 'MX_GPIO_Init'
+  210 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'Error_Handler':
+../Core/Src/main.c:235:1: error: expected declaration or statement at end of input
+  235 | }
+      | ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:235:1: error: expected declaration or statement at end of input
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:53:13: warning: 'MX_GPIO_Init' used but never defined
+   53 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:54:13: warning: 'MX_USART2_UART_Init' used but never defined
+   54 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:226:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  226 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:210:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  210 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:177:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  177 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:141:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  141 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:124:6: warning: 'HAL_UART_RxCpltCallback' defined but not used [-Wunused-function]
+  124 | void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:116:9: warning: 'convertoupcase' defined but not used [-Wunused-function]
+  116 | uint8_t convertoupcase(uint8_t data)
+      |         ^~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+14:36:09 Build Failed. 5 errors, 8 warnings. (took 285ms)
+

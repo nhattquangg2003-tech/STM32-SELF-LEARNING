@@ -1,0 +1,15 @@
+21:22:41 **** Build of configuration Debug for project STM32F103C8T6 ARM Cortex M3_Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c8tx.d" -MT"Startup/startup_stm32f103c8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c8tx.o" "../Startup/startup_stm32f103c8tx.s"
+arm-none-eabi-gcc "../Src/001LedToggle.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"D:/stm322/STM32F103C8T6 ARM Cortex M3/Drivers/Inc" -I"D:/stm322/STM32F103C8T6 ARM Cortex M3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/001LedToggle.d" -MT"Src/001LedToggle.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/001LedToggle.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"D:/stm322/STM32F103C8T6 ARM Cortex M3/Drivers/Inc" -I"D:/stm322/STM32F103C8T6 ARM Cortex M3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"D:/stm322/STM32F103C8T6 ARM Cortex M3/Drivers/Inc" -I"D:/stm322/STM32F103C8T6 ARM Cortex M3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Drivers/Src/STM32F103C8T6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"D:/stm322/STM32F103C8T6 ARM Cortex M3/Drivers/Inc" -I"D:/stm322/STM32F103C8T6 ARM Cortex M3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/Src/STM32F103C8T6_gpio_driver.d" -MT"Drivers/Src/STM32F103C8T6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/Src/STM32F103C8T6_gpio_driver.o"
+arm-none-eabi-gcc -o "STM32F103C8T6 ARM Cortex M3_Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\stm322\STM32F103C8T6 ARM Cortex M3\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F103C8T6 ARM Cortex M3_Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: cannot open output file STM32F103C8T6 ARM Cortex M3_Drivers.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: STM32F103C8T6 ARM Cortex M3_Drivers.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+21:22:41 Build Failed. 2 errors, 0 warnings. (took 617ms)
+

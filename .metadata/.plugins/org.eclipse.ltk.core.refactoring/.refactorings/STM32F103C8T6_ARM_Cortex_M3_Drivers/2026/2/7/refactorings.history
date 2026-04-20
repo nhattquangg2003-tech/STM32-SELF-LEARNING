@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;STM32F103C8T6 ARM Cortex M3_Drivers/Drivers/Src/main.c&apos; to &apos;DriverMain.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Drivers/Src/main.c" name="DriverMain.c" stamp="1770708219098" updateReferences="true"/>
+</session>
